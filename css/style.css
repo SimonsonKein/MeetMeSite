@@ -1,0 +1,749 @@
+.loaderArea {
+    background: linear-gradient(89.88deg, #9147FF 0.09%, #FF4747 99.9%);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+  }
+
+  .loader {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+  }
+   
+  .loader:before,
+  .loader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 8px solid rgba(255,255,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+  }
+   
+  .loader:before {
+    animation: animate 3s infinite linear;
+  }
+   
+  @keyframes animate {
+    0% {
+      transform: rotate(0) skew(0);
+    }
+     
+    100% {
+      transform: rotate(180deg) skew(360deg);
+    }
+  }
+   
+   
+  .loader:after {
+    animation: animate2 3s infinite linear;
+  }
+   
+  @keyframes animate2 {
+    0% {
+      transform: rotate(0) skew(0);
+    }
+     
+    100% {
+      transform: rotate(-180deg) skew(-360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #9B94F0;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9B94F0;
+}
+
+.header-wrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70%;
+    font-family: "Revalia";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 74px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.header {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-wrap h2 {
+    width: 700px;
+    font-family: "Revalia";
+    font-style: normal;
+    font-size: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+
+
+/* Первая секция */
+.sec1 {
+    width: 100%;
+    min-height: 500px;
+    background-color: #2A1CC7;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ques {
+    width: 60%;
+}
+
+.table {
+    width: 100%;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.77);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table p {
+    font-family: "Roboto slab";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.mm {
+    font-family: "Revalia";
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    width: 49%;
+    height: 50px;
+    background: linear-gradient(89.88deg, #9147FF 0.09%, #FF4747 99.9%);
+    border-radius: 8px;
+    transition: 2s;
+    border: none;
+    font-family: "Roboto slab";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+
+.img img {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
+/* СЕКЦИЯ 2 */
+.sec2 {
+    width: 100%;
+    min-height: 600px;  
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    color: #0D093F;
+}
+
+.text {
+    width: 100%;
+}
+
+.content p {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.animat {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
+
+
+/* СЕКЦИЯ 3 */
+.sec3 {
+    width: 100%;
+    min-height: 420px;
+    background-color: #2A1CC7;
+    padding: 30px 0 30px 0 ;
+    border-radius: 50px;
+}
+
+.slider {
+    border: 2px solid black;
+    /* width: 100%; */
+    max-width: 60%;
+    /* height: 300px; */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    width: 1000px;
+    display: flex;
+    background: orange;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider img {
+    max-height: 700px;
+}
+
+.container-btns {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-btns button {
+    width: 100px;
+    height: 60px;
+    border: none;
+    background: linear-gradient(89.88deg, #9147FF 0.09%, #FF4747 99.9%);
+    border-radius: 8px;
+    transition: 2s;
+    border: none;
+    font-family: "Revalia";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+
+
+/* СЕКЦИЯ 4 */
+.sec4 {
+    display: flex;
+}
+
+
+h1 {
+    font-family: "Revalia";
+    color: #000000;
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+
+
+
+/* СЕКЦИЯ 5 */
+.sec5 {
+    width: 100%;
+    min-height: 2200px;
+    background: #2A1CC7;
+    border-radius: 50px;
+    padding-top: 30px;
+}
+
+.sec5 h2 {
+    font-family: "Revalia";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 74px;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.container-card {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 400px;
+    min-height: 600px;
+    background: #0D093F;
+    mix-blend-mode: normal;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.card h3 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #DDDBFA;
+    margin: 10px 0 20px 0;
+}
+
+.card img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card h4 {
+    font-family: "Revalia";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    width: 90%;
+    margin: 5px auto;
+    color: #DDDBFA;
+}
+
+.card p {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    width: 90%;
+    margin: 20px auto;
+    color: #DDDBFA;
+}
+
+
+
+
+/* ПОДВАЛ */
+footer {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download {
+    width: 300px;
+    height: 150px;
+    background: #2A1CC7;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.download a {
+    font-family: "Revalia";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer.wrap {
+    max-width: 600px;
+    height: 400px;
+    background: #2A1CC7;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer.wrapper {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background-color: #09062C;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: none;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+textarea {
+    width: 100%;
+    background-color: #09062C;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: none;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.mess {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #09062C;
+}
+
+
+
+
+
+
+
+/* MEDIA ЗАПРОСЫ */
+@media screen and (min-width: 1400px) {
+    .table p {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .row-card {
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .wrapper img {
+        width: 300px;
+    } 
+
+
+    .container-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-card {
+        width: 70%;
+    }
+
+    .card {
+        margin: 20px auto;
+    }
+
+    .container-btns button {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .header-wrap {
+        justify-content: center;
+    }
+
+    .header-wrap h2 {
+        display: none;
+    }
+
+    .logo {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .wrap {
+        flex-direction: column;
+    }
+
+    .table {
+        height: 100px;
+    }
+
+    .table p {
+        font-size: 20px;
+    }
+
+    .ques {
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer.wrap {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec3 {
+        padding: 30px 0 0 0;
+    } 
+}
+
+@media screen and (max-width: 570px) {
+    .row-card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sec3 {
+        min-height: 380px;
+    }
+
+    h1 {
+        padding: 30px 0;
+        font-size: 3em;
+    }
+
+    .animat {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .row-card {
+        width: 90%;
+    }
+
+    .footer.wrap {
+        width: 95%;
+    }
+
+    .footer.wrapper {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sec3 {
+        min-height: 330px;
+        border-radius: 30px;
+    }
+
+    .sec5 {
+        border-radius: 30px;
+    }
+
+    .sec1 {
+        border-radius: 30px;
+    }
+}
+
+
+
+
+/* HOVER */
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.img img {
+  animation: spin 3s infinite;
+}
+
+.btns button:hover {
+    width: 50%;
+    height: 60px;
+}
+
+.container-btns button:hover {
+    width: 120px;
+    height: 80px;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.card:hover {
+    animation: bounce 1s;
+}
+
+.download:hover {
+    animation: bounce 1s;
+} 
